@@ -30,7 +30,6 @@ console.log('Test- A little about me:', me);
 let fullname = (`${me.firstName} ${me.lastName}`);
 console.log( 'Test- My fullname is:', fullname );
 
-
 /* 3. Nested arrays
   - Console.log your first favorite food
   - Console.log your last favorite food
