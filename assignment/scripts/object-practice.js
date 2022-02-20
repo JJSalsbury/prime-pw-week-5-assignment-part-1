@@ -18,7 +18,7 @@ const me = {
   favThreeFoods: ['pizza', 'pasta', 'subs']
 };//end
 
-console.log('A little about me:', me);
+console.log('Test- A little about me:', me);
 
 /* 2. Accessing object properties.
   - Create a variable called fullName
@@ -26,16 +26,18 @@ console.log('A little about me:', me);
     created above to set its value.
   - Console.log fullName
 */
+
 let fullname = (`${me.firstName} ${me.lastName}`);
-console.log( fullname );
+console.log( 'Test- My fullname is:', fullname );
 
 
 /* 3. Nested arrays
   - Console.log your first favorite food
   - Console.log your last favorite food
 */
-console.log( `${me.favThreeFoods[0]}` );
-console.log( me.favThreeFoods[2]);
+
+console.log( `Test- My first favorite food is: ${me.favThreeFoods[0]}` );
+console.log( `Test- My last favorite food is: ${me.favThreeFoods[2]}` );
 
 /* 4. Change a property of an existing object.
   - Console.log your current shoe count.
@@ -44,14 +46,9 @@ console.log( me.favThreeFoods[2]);
   - Console.log your updated shoe count.
 */
 
-
-
-console.log( me.shoeCount );
-me.updateShoes = function addShoes() {
-  return ++me.shoeCount;
-}
-me.updateShoes();
-console.log(me.shoeCount);
+console.log( `Test- My shoe count is (pairs): ${me.shoeCount}` );
+me.shoeCount++;
+console.log( `Test- Got a new pair of shoes! Updated shoe count: ${me.shoeCount}` );
 
 /* 5. Add a new property to an existing object.
   - Add a 'favoriteColor' to your existing object
@@ -60,6 +57,6 @@ console.log(me.shoeCount);
   - Console.log your object
 */
 
-me.favoriteColor = 'black'
-console.log( me.favoriteColor );
+me.favoriteColor = 'black';
+console.log( `Test- My favorite color is (should log "black"): ${me.favoriteColor}` );
 console.log( me );
